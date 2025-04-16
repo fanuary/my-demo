@@ -4,7 +4,11 @@
 
 ## 1. 准备工作
 
-导入依赖
+1. 安装zookeeper
+
+   使用zookeeper作为注册中心，Dubbo只要成功连上zookeeper，就可以自动实现注册发现等功能，无需额外操作
+
+2. 导入依赖
 
 ```xml
 <!-- 提供Dubbo与Spring Boot集成的自动配置能力 -->
