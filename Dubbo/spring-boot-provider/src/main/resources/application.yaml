@@ -1,0 +1,15 @@
+dubbo:
+  application:
+    name: spring-boot-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    check: false # 启动时不校验注册中心连接
+  #  指定Dubbo通信使用的协议名。默认值是 dubbo
+  protocol:
+    name: dubbo
+    port: 20880
+spring:
+  application:
+    name: spring-boot-provider
+server:
+  port: 8081
