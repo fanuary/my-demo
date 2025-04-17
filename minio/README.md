@@ -1,7 +1,23 @@
 # Minio
 对象存储服务
-
-- 配置文件：
+- 配置文件:
+```yaml
+spring:
+  application:
+    name: minio-demo
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+minio:
+  endpoint: http://localhost:9000
+  accessKey: zyXfT5OyEpZbUn17HTc0
+  secretKey: qn1U5nJDgnWJLnAa3QvVKcKMrEgWkD7dt3emfIEX
+  bucketName: local-test
+server:
+  port: 8083
+```
+- 配置类:
 
 ```java
 package com.demo.minio.config;
@@ -479,4 +495,3 @@ public class MinioUtil {
 }
 
 ```
-
