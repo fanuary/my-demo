@@ -13,13 +13,14 @@
         <module name="producer" />
         <module name="consumer" />
       </profile>
-      <profile name="Annotation profile for spring-boot-provider" enabled="true">
+      <profile name="Annotation profile for minio" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
+        <processorPath>
           <entry name="$PROJECT_DIR$/../../../maven-repository/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="minio" />
         <module name="spring-boot-provider" />
         <module name="spring-boot-interface" />
         <module name="spring-boot-consumer" />
@@ -32,6 +33,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer" options="-parameters" />
+      <module name="minio" options="-parameters" />
       <module name="producer" options="-parameters" />
       <module name="spring-boot-consumer" options="-parameters" />
       <module name="spring-boot-interface" options="-parameters" />

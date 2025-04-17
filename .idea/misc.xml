@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/RabbitMQ/pom.xml" />
         <option value="$PROJECT_DIR$/RabbitMQ/consumer/pom.xml" />
         <option value="$PROJECT_DIR$/RabbitMQ/producer/pom.xml" />
+        <option value="$PROJECT_DIR$/minio/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
